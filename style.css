@@ -1,0 +1,39 @@
+header{
+    background-image:url(terv.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+body{
+    background-color: #FAF0DC;
+}
+
+nav{
+    padding: 20px 40px;
+}
+
+section{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    border-style: solid;
+    border: black;
+    padding: 20px;
+    margin: 40px auto;
+    margin-top: 5px;
+    width: 60%;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+footer{
+    border-style:solid;
+    border-color: black;
+    background-color: white;
+}
