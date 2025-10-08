@@ -33,7 +33,13 @@ p{
 }
 
 footer{
+    display: flex;
     border-style:solid;
     border-color: black;
     background-color: white;
+    justify-content: space-evenly;
+}
+
+#csak{
+    margin-top: 80px;
 }
