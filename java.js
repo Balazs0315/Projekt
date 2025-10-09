@@ -29,8 +29,8 @@ function szamolo3(){
     c = 2.5
     fixar = 960000
 
-    felszin = Math.pow(a)*c+(Math.pow(a)*c)/3
-    terfogat = Math.pow(a)+4*a*2.5+2*a*(Math.sqrt(Math.pow(a/2)+(Math.pow(2.5))))
+    felszin = Math.pow(a,2)+4*a*2.5+2*a*(Math.sqrt(Math.pow(a/2,2)+(Math.pow(2.5,2))))
+    terfogat = Math.pow(a,2)*c+(Math.pow(a,2)*c)/3
     va = terfogat/felszin
 
     osszeg = va*fixar
@@ -89,7 +89,7 @@ function nagyhaz(){
 
             <button type="button" onclick="szamolo4()">Számolás</button><br><br>
             <span id="eredmeny"></span>
-        </form>
+    </form>
     `
 }
 
@@ -102,7 +102,7 @@ function kishaz() {
             <h3>Kisház</h3>
 
             <label for="ertek">A oldal</label>
-            <input type="range" name="ertek" id="ertek" min="3" max="10" value="3" oninput="range1()"><span id="kiir">3 m</span><br><br>
+            <input type="range" name="ertek" id="ertek" min="2" max="6" value="2" oninput="range1()"><span id="kiir">2 m</span><br><br>
 
 
             <button type="button" onclick="szamolo3()">Számolás</button><br><br>
