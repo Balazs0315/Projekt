@@ -16,12 +16,11 @@ section{
     display: flex;
     flex-direction:column;
     background-color: white;
-    border-style: solid;
-    border: black;
     padding: 20px;
     margin: 40px auto;
     margin-top: 5px;
-    width: 60%;
+    width: 40%;
+    border-radius: 25px;
 }
 
 h2{
