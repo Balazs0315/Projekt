@@ -27,10 +27,10 @@
                   Számoló
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#" onclick="teglatest()">Téglatest</a></li>
-                  <li><a class="dropdown-item" href="#">Gúla</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="kishaz()">Kisház</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="nagyhaz()">Nagyház</a></li>
+                  <li><p class="dropdown-item"  onclick="teglatest()">Téglatest</p></li>
+                  <li><p class="dropdown-item"  onclick="gula()">Gúla</p></li>
+                  <li><p class="dropdown-item"  onclick="kishaz()">Kisház</p></li>
+                  <li><p class="dropdown-item"  onclick="nagyhaz()">Nagyház</p></li>
                 </ul>
               </li>
             </ul>
@@ -39,21 +39,39 @@
       </nav>
       <br>
       
-    <section>
+    <main>
+    <section class="szoveg">
+
         <h2>Alapfogalmak</h2>
-        <p>
+        <p>Térfogat (V): azt méri, hogy egy test mennyi 3 dimenziós “helyet” foglal el – mértékegysége pl. köbméter (m³).Felszín / Felület (A vagy S): a test külső felületeinek összesített területe – mértékegysége pl. négyzetméter (m²).</p>
 
-Térfogat (V): azt méri, hogy egy test mennyi 3 dimenziós “helyet” foglal el – mértékegysége pl. köbméter (m³).
-
-Felszín / Felület (A vagy S): a test külső felületeinek összesített területe – mértékegysége pl. négyzetméter (m²).</p>
     </section>
     <section id="szamolo">
-      
+      <form action="" id="urlap">
+            <img src="img/teglatest.png" class="test" alt="teglatest" title="teglatest">
+
+            <h3>Téglatest</h3>
+
+            <label for="ertek">A oldal</label>
+            <input type="range" name="ertek" id="ertek" min="3" max="10" value="3" oninput="range1()"><span id="kiir">3 m</span><br><br>
+
+            <label for="">B oldal</label>
+            <input type="range" name="ertek2" id="ertek2" min="2" max="10" value="2" oninput="range2()"><span id="kiir2">2 m</span><br><br>
+
+            <button type="button" onclick="szamolo()">Számolás</button><br><br>
+            <span id="eredmeny"></span>
+        </form>
     </section>
+  </main>
+
     <br>
+
     <footer>
-        <img src="Logo.webp" alt="Logo" title="Logo">
-        <p id="csak">Készítette: Lipp Lőrinc, Kovács Balázs</p>
+      <div class="keptarolo">
+        <img src="img/Logo.webp" alt="Logo" title="Logo">
+        <p id="logofelirat">Siófoki SZC Mathiász János Technikum,<br> Gimnázium és Kollégium</p>
+      </div>
+        <p id="keszitok">Készítette: Lipp Lőrinc, <a href="html.html">Kovács Balázs</a></p>
     </footer>
     <script src="java.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
