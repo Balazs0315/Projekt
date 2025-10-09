@@ -1,0 +1,5 @@
+Alapfogalmak
+
+Térfogat (V): azt méri, hogy egy test mennyi 3 dimenziós “helyet” foglal el – mértékegysége pl. köbméter (m³).
+
+Felszín / Felület (A vagy S): a test külső felületeinek összesített területe – mértékegysége pl. négyzetméter (m²).
