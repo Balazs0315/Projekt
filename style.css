@@ -11,10 +11,6 @@ header{
     height: 400px;
 }
 
-body{
-    background-color: #FAF0DC;
-}
-
 nav{
     padding: 30px 40px;
     font-size: x-large;
@@ -91,8 +87,21 @@ button{
 }
 
 .test{
-    width: 70%;
+    width: 20vh;
+    height: 20vh;
     display: block;
     margin: auto;
 }
 
+.testtegla{
+    width: 20vh;
+    height: 14vh;
+    display: block;
+    margin: auto;
+}
+
+.nagyhaz{
+    width: 50%;
+    display: block;
+    margin: auto;
+}

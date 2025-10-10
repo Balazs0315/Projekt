@@ -25,6 +25,23 @@ function szamolo(){
     let eredmeny = document.getElementById("eredmeny").innerHTML = `${Math.round(osszeg)} Ft`
 }
 
+function szamolo2(){
+    let a = document.getElementById("ertek").value
+    c= 2.5
+    fixar = 4222628
+
+    felszin = 3*a+12*Math.sqrt(Math.pow(a/2,2)+Math.pow(c,2))
+    terfogat = a*c
+
+    va = terfogat/felszin
+
+    osszeg = va*fixar
+
+    let eredmeny = document.getElementById("eredmeny").innerHTML = `${Math.round(osszeg)} Ft`
+
+
+}
+
 function szamolo3(){
     let a = document.getElementById("ertek").value
     fixar = 960000
@@ -56,7 +73,7 @@ function teglatest(){
     let teglaszmolo = document.getElementById("szamolo").innerHTML = 
         `
         <form action="" id="urlap">
-            <img src="img/teglatest.png" class="test" alt="teglatest" title="teglatest">
+            <img src="img/teglatest.png" class="testtegla" alt="teglatest" title="teglatest">
 
             <h3>Téglatest</h3>
 
@@ -72,11 +89,30 @@ function teglatest(){
         `
 }
 
+function gula(){
+    let gulaszamolo = document.getElementById("szamolo").innerHTML =
+    `
+     <form action="" id="urlap">
+            <img src="img/gula.png" class="test" alt="gula" title="gula">
+
+            <h3>Gúlaház</h3>
+
+            <label for="ertek">A oldal</label>
+            <input type="range" name="ertek" id="ertek" min="3" max="10" value="3" oninput="range1()"><span id="kiir">3 m</span><br><br>
+
+
+            <button type="button" onclick="szamolo3()">Számolás</button><br><br>
+            <span id="eredmeny"></span>
+        </form>
+
+    `
+}
+
 function kishaz() {
     let kishaz = document.getElementById("szamolo").innerHTML = 
     `
         <form action="" id="urlap">
-            <img src="" alt="">
+            <img src="img/kishaz.png" class="test" alt="kishaz" title="kishaz">
 
             <h3>Kisház</h3>
 
@@ -90,11 +126,13 @@ function kishaz() {
     `
 }
 
+
+
 function nagyhaz(){
     let nagyhaz = document.getElementById("szamolo").innerHTML = 
     `
     <form action="" id="urlap">
-            <img src="" alt="">
+            <img src="img/nagyhazjo.png" class="nagyhaz" alt="nagyhaz" title="nagyhaz">
 
             <h3>Nagyház</h3>
 
@@ -109,4 +147,3 @@ function nagyhaz(){
     </form>
     `
 }
-
