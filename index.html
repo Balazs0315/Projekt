@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Térfogat Számoló</title>
+    <link rel="shortcut icon" href="img/jo.webp" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,12 +13,12 @@
 
     </header>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-secondary">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
@@ -29,8 +30,8 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><p class="dropdown-item"  onclick="teglatest()">Téglatest</p></li>
                   <li><p class="dropdown-item"  onclick="gula()">Gúla</p></li>
-                  <li><p class="dropdown-item"  onclick="kishaz()">Kisház</p></li>
-                  <li><p class="dropdown-item"  onclick="nagyhaz()">Nagyház</p></li>
+                  <li><p class="dropdown-item"  onclick="kishaz()">Négyzet alakú kétszintes ház</p></li>
+                  <li><p class="dropdown-item"  onclick="nagyhaz()">Téglatest lakú kétszintes ház</p></li>
                 </ul>
               </li>
             </ul>
@@ -42,13 +43,14 @@
     <main>
     <section class="szoveg">
 
-        <h2>Alapfogalmak</h2>
-        <p>Térfogat (V): azt méri, hogy egy test mennyi 3 dimenziós “helyet” foglal el – mértékegysége pl. köbméter (m³).Felszín / Felület (A vagy S): a test külső felületeinek összesített területe – mértékegysége pl. négyzetméter (m²).</p>
+        <h2>Számológép alapinformációi</h2>
+        <p>Ez a számológép a beépíthető 1 négyzetméterre jutó hasznos térfogatot számolja 4 különböző háztipuson.</p>
+        <p>A magasság érték adott szintenként 2,5 m.</p>
 
     </section>
     <section id="szamolo">
       <form action="" id="urlap">
-            <img src="img/teglatest.png" class="test" alt="teglatest" title="teglatest">
+            <img src="img/teglatest.png" class="testtegla" alt="testtegla" title="teglatest">
 
             <h3>Téglatest</h3>
 
@@ -58,7 +60,7 @@
             <label for="">B oldal</label>
             <input type="range" name="ertek2" id="ertek2" min="2" max="10" value="2" oninput="range2()"><span id="kiir2">2 m</span><br><br>
 
-            <button type="button" onclick="szamolo()">Számolás</button><br><br>
+            <button type="button" onclick="szamolo()">Számolás</button>
             <span id="eredmeny"></span>
         </form>
     </section>
@@ -71,7 +73,7 @@
         <img src="img/Logo.webp" alt="Logo" title="Logo">
         <p id="logofelirat">Siófoki SZC Mathiász János Technikum,<br> Gimnázium és Kollégium</p>
       </div>
-        <p id="keszitok">Készítette: Lipp Lőrinc, <a href="html.html">Kovács Balázs</a></p>
+        <p id="keszitok">Készítette: Lipp Lőrinc, <a href="html.html" target="_blank">Kovács Balázs</a></p>
     </footer>
     <script src="java.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

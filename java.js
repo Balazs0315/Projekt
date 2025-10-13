@@ -1,13 +1,13 @@
 let c = 2.5
 
 function range1(){
-let ertek = document.getElementById("ertek").value
-let kiir = document.getElementById("kiir").innerHTML = `${ertek} m`
+let ertek = document.getElementById("ertek")
+document.getElementById("kiir").innerHTML = `${ertek.value} m`
 }
 
 function range2(){
-let ertek2 = document.getElementById("ertek2").value
-let kiir2 = document.getElementById("kiir2").innerHTML = `${ertek2} m`
+let ertek = document.getElementById("ertek2")
+document.getElementById("kiir2").innerHTML = `${ertek.value} m`
 }
 
 function szamolo(){
@@ -22,7 +22,7 @@ function szamolo(){
 
     osszeg = va*fixar
 
-    let eredmeny = document.getElementById("eredmeny").innerHTML = `${Math.round(osszeg)} Ft`
+    let eredmeny = document.getElementById("eredmeny").innerHTML = `Fizetendő összeg: ${Math.round(osszeg)} Ft`
 }
 
 function szamolo2(){
@@ -37,7 +37,7 @@ function szamolo2(){
 
     osszeg = va*fixar
 
-    let eredmeny = document.getElementById("eredmeny").innerHTML = `${Math.round(osszeg)} Ft`
+    let eredmeny = document.getElementById("eredmeny").innerHTML = `Fizetendő összeg: ${Math.round(osszeg)} Ft`
 
 
 }
@@ -52,7 +52,7 @@ function szamolo3(){
 
     osszeg = va*fixar
 
-    let eredmeny = document.getElementById("eredmeny").innerHTML = `${Math.round(osszeg)} Ft`
+    let eredmeny = document.getElementById("eredmeny").innerHTML = `Fizetendő összeg: ${Math.round(osszeg)} Ft`
 }
 
 function szamolo4(){
@@ -66,7 +66,7 @@ function szamolo4(){
 
     osszeg = va*fixar
 
-    let eredmeny = document.getElementById("eredmeny").innerHTML = `${Math.round(osszeg)} Ft`
+    let eredmeny = document.getElementById("eredmeny").innerHTML = `Fizetendő összeg: ${Math.round(osszeg)} Ft`
 }
 
 function teglatest(){
@@ -83,7 +83,7 @@ function teglatest(){
             <label for="">B oldal</label>
             <input type="range" name="ertek2" id="ertek2" min="2" max="10" value="2" oninput="range2()"><span id="kiir2">2 m</span><br><br>
 
-            <button type="button" onclick="szamolo()">Számolás</button><br><br>
+            <button type="button" onclick="szamolo()">Számolás</button>
             <span id="eredmeny"></span>
         </form>
         `
@@ -93,7 +93,7 @@ function gula(){
     let gulaszamolo = document.getElementById("szamolo").innerHTML =
     `
      <form action="" id="urlap">
-            <img src="img/gula.png" class="test" alt="gula" title="gula">
+            <img src="img/gula.png" class="gula" alt="gula" title="gula">
 
             <h3>Gúlaház</h3>
 
@@ -101,7 +101,7 @@ function gula(){
             <input type="range" name="ertek" id="ertek" min="3" max="10" value="3" oninput="range1()"><span id="kiir">3 m</span><br><br>
 
 
-            <button type="button" onclick="szamolo3()">Számolás</button><br><br>
+            <button type="button" onclick="szamolo3()">Számolás</button>
             <span id="eredmeny"></span>
         </form>
 
@@ -112,29 +112,27 @@ function kishaz() {
     let kishaz = document.getElementById("szamolo").innerHTML = 
     `
         <form action="" id="urlap">
-            <img src="img/kishaz.png" class="test" alt="kishaz" title="kishaz">
+            <img src="img/kishaz.jpg" class="kishaz" alt="kishaz" title="kishaz">
 
-            <h3>Kisház</h3>
+            <h3>Négyzet alakú kétszintes ház</h3>
 
             <label for="ertek">A oldal</label>
             <input type="range" name="ertek" id="ertek" min="2" max="6" value="2" oninput="range1()"><span id="kiir">2 m</span><br><br>
 
 
-            <button type="button" onclick="szamolo3()">Számolás</button><br><br>
+            <button type="button" onclick="szamolo3()">Számolás</button>
             <span id="eredmeny"></span>
         </form>
     `
 }
 
-
-
 function nagyhaz(){
     let nagyhaz = document.getElementById("szamolo").innerHTML = 
     `
     <form action="" id="urlap">
-            <img src="img/nagyhazjo.png" class="nagyhaz" alt="nagyhaz" title="nagyhaz">
+            <img src="img/nagyhaz.jpg" class="nagyhaz" alt="nagyhaz" title="nagyhaz">
 
-            <h3>Nagyház</h3>
+            <h3>Téglatest alakú kétszintes ház</h3>
 
             <label for="ertek">A oldal</label>
             <input type="range" name="ertek" id="ertek" min="4" max="10" value="4" oninput="range1()"><span id="kiir">4 m</span><br><br>
@@ -142,7 +140,7 @@ function nagyhaz(){
             <label for="">B oldal</label>
             <input type="range" name="ertek2" id="ertek2" min="3" max="10" value="3" oninput="range2()"><span id="kiir2">3 m</span><br><br>
 
-            <button type="button" onclick="szamolo4()">Számolás</button><br><br>
+            <button type="button" onclick="szamolo4()">Számolás</button>
             <span id="eredmeny"></span>
     </form>
     `
