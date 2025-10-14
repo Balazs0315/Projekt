@@ -8,25 +8,21 @@ body {
 header {
   background-image: url(img/terv.jpg);
   background-size: cover;
-  height: 400px;
+  height: 45vh;
 }
 
 nav {
-  padding: 30px 40px;
+  padding: 3% 4%;
   font-size: x-large;
-}
-
-.navcolor {
-  color: white;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 20px;
-  margin: 40px auto;
-  margin-top: 80px;
+  background-color: rgb(184, 182, 182);
+  padding: 2%;
+  margin: 4% auto;
+  margin-top: 8%;
   width: 25%;
   border-radius: 25px;
 }
@@ -35,12 +31,12 @@ section {
   opacity: 85%;
 }
 #szamolo {
-  height: 48vh;
+  height: 48%;
 }
 
 h2 {
   text-align: center;
-  padding: 6px;
+  padding: 2%;
 }
 
 p {
@@ -57,16 +53,16 @@ footer {
 }
 
 #keszitok {
-  margin-top: 80px;
+  margin-top: 4%;
 }
 #logofelirat {
-  padding: 10px;
+  padding: 1%;
   padding-top: 10%;
 }
 
 h3 {
   text-align: center;
-  padding: 10px 0px 10px 0px;
+  padding: 2% 0px 2% 0px;
 }
 
 a {
@@ -75,7 +71,7 @@ a {
 }
 
 input {
-  margin: 0px 10px;
+  margin: 0px 3%;
 }
 
 a:hover {
@@ -89,8 +85,9 @@ button {
   border: white;
   transition: background-color 0.3s;
   box-shadow: 0vh 0.3vh 0.3vh rgba(0, 0, 0, 0.507);
-  margin-right: 40px;
+  margin-right: 4%;
 }
+
 button:hover {
   background-color: rgb(36, 201, 36);
   transition: background-color 0.3s;
@@ -109,13 +106,13 @@ button:hover {
 }
 
 .testtegla {
-  width: 26vh;
-  height: 20vh;
+  width: 56%;
+  height: 50%;
   display: block;
   margin: auto;
   border-radius: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.24);
-  padding: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.39);
+  padding: 2%;
 }
 
 .gula {
@@ -124,7 +121,7 @@ button:hover {
   border-radius: 20px;
   border: 2px solid black;
   width: 35%;
-  padding: 6px;
+  padding: 2%;
 }
 
 .nagyhaz {
