@@ -47,6 +47,7 @@ footer {
   justify-content: space-evenly;
   padding: 1% 1%;
   font-size: medium;
+  border-top:  2px solid black;
 }
 
 #keszitok {
